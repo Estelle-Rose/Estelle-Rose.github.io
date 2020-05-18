@@ -116,10 +116,10 @@ nav {
     width: 67%;     
 }
 #nom h1 {
-    padding-left: 40px;
+    padding-left: 60px;
 }
 #nom h3 {
-    padding-left: 40px;
+    padding-left: 60px;
 }
 .estelle {
     color: #3D7E9A;
@@ -294,12 +294,19 @@ footer {
     }
 }
 @media screen and (max-width: 768px){ 
+    nav{
+        display: none;
+    } 
     body {
         width: auto;
     }
-    .principal, main  {
+    main  {
         display: flex;
         flex-direction: column;
+     }
+     .principal {
+        display: flex;
+        flex-direction: column-reverse;
      }
      footer {
          display: flex;
@@ -309,14 +316,14 @@ footer {
         width: 100% !important;
      }
     #photo img {
-        width: 40% !important;
+       width: 33%;
     }
-    .principal {
-        margin-top: 50px;;
-    }
+    
+    
     #nom {
         align-items: center;
-        padding-left: 0 !important;        
+        padding-bottom: 20px;
+           
     }
     #nom h1, #nom h3 {
         padding-left: 0 !important;
@@ -335,6 +342,11 @@ footer {
         display: flex; 
         flex-direction: column;
         margin-top: -40px;
+    }
+    .patron {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     
