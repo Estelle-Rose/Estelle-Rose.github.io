@@ -252,7 +252,7 @@ header h3 {
 /*FOOTER*/
 footer {
     display: flex; 
-    flex-direction: row;   
+  
 }
     /*LOISIRS*/
     #loisirs {
