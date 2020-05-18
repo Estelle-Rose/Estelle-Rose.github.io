@@ -87,7 +87,8 @@ list-style-type: none;
 #photo img {
     border-radius: 50%;
     border: 3px solid #3D7E9A;
-    width: 50%;    
+    width: 200px;  
+    height: 200px;
 }
 #nom {
     display: flex;
@@ -265,9 +266,7 @@ footer {
     #photo, #nom, #bloc_gauche, #bloc_droite, #loisirs, #recommandation {
         width: 100% !important;
      }
-    #photo img {
-       width: 33%;
-    }    
+       
     #nom {
         display: flex;
         flex-direction: column;
