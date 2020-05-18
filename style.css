@@ -11,8 +11,7 @@ body {
     margin: auto;
     max-width: 1230px;
     border: 2px solid #3D7E9A;
-    box-shadow: 2px 1px 2px #3D7E9A;
-    text-align: justify;
+    box-shadow: 2px 1px 2px #3D7E9A;    
     height: auto;
     overflow-x: hidden;
 }
@@ -24,7 +23,6 @@ body {
          url('polices/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'montserratlight';
@@ -32,7 +30,6 @@ body {
          url('montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'montserratbold';
@@ -40,7 +37,6 @@ body {
          url('polices/montserrat-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'montserratitalic';
@@ -48,7 +44,10 @@ body {
          url('polices/montserrat-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+}
+p {
+    text-align: justify;
+    line-height: 170%;
 }
 h1 {
 	font-size: 70px;
@@ -252,7 +251,8 @@ header h3 {
 
 /*FOOTER*/
 footer {
-    display: flex;    
+    display: flex; 
+    flex-direction: row;   
 }
     /*LOISIRS*/
     #loisirs {
