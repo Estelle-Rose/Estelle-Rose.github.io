@@ -190,9 +190,9 @@ main {
         padding: 30px;
     }
     .date {
-    display: flex;
-    flex: 0.25; 
-    padding-top: 20px;
+        display: flex;
+        flex: 0.25 0 0; 
+        padding-top: 20px;
     }
     .date dl {
         padding-left: 10px;
@@ -200,7 +200,7 @@ main {
     article {
         display: flex;
         flex-direction: column;
-        flex: 0.75;
+        flex: 0.75 0 0;
         padding-left: 30px;
     
     }
