@@ -2,14 +2,14 @@
 
 body {
 
-	background-color: #F5F6F3;
+	background-color: #F0F4C3;
 	font-family: 'montserratregular',"open sans", serif;
     font-size: 0.9em;	
-    color: #333333;
+    color: #212121;
     margin: auto;
     max-width: 1230px;
-    border: 2px solid #3D7E9A;
-    box-shadow: 2px 1px 2px #3D7E9A;    
+    border: 2px solid #BDBDBD;
+    box-shadow: 2px 1px 2px #BDBDBD;    
     height: auto;
     overflow-x: hidden;
 }
@@ -56,11 +56,11 @@ h1,h2,h3 {
 }
 
 a {
-    color: #3D7E9A;
+    color: #009688;
     text-decoration: none;
 }
 a:hover {
-    color: #B36FA6;
+    color: #757575;
 }
 i {
     font-family: 'montserratitalic';
@@ -69,7 +69,7 @@ li {
 list-style-type: none;
 }
 .fas, .far, .fa {
-    color: #3D7E9A;
+    color: #009688;
  }
 
 /*HEADER*/
@@ -80,13 +80,13 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     width: 33%;
-    background-color: #F4CF7E;
+    background-color: #CDDC39;
     padding-top: 30px;
     padding-bottom: 30px;  
 }
 #photo img {
     border-radius: 50%;
-    border: 3px solid #3D7E9A;
+    border: 3px solid #009688;
     width: 200px;  
     height: 200px;
 }
@@ -106,10 +106,10 @@ list-style-type: none;
     text-transform: uppercase;
 }
 .devel {
-    border-bottom: 1px solid #3D7E9A;
+    border-bottom: 1px solid #009688;
 }
 .estelle {
-    color: #3D7E9A;
+    color: #009688;
 }
 
 /*MAIN*/
@@ -120,12 +120,12 @@ main {
     /*BLOC GAUCHE*/
     #bloc_gauche {
         display: block;
-        background-color: #F4CF7E;
+        background-color: #CDDC39;
         width: 33%;
     }
 
     aside h2 {
-        color: #3D7E9A;
+        color: #009688;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,7 +136,7 @@ main {
     }
     .box {	
         height: 40px;	
-        background-color: #F5F6F3;
+        background-color: #F0F4C3;
     }
     /*CONTACT*/
     dd {
@@ -163,7 +163,7 @@ main {
     #bloc_droite {
         display: block;    
         width: 67%;
-        background-color: #F5F6F3;    
+        background-color: #F0F4C3;    
     }
     .container {   
         display: flex;   
@@ -173,7 +173,7 @@ main {
     }
     .top {
         display: flex;
-        border-bottom: 2px solid #3D7E9AD1;
+        border-bottom: 2px solid #009688;
         font-family: 'montserratbold';
         margin-left: 30px;
         margin-right: 30px; 
@@ -220,7 +220,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 33%;
-        background-color: #F4CF7E;
+        background-color: #CDDC39;
     }
     .icones {
         display: flex;
@@ -234,7 +234,7 @@ footer {
     #recommandation {
         display: block;  
         width: 67%; 
-        background-color: #F5F6F3;
+        background-color: #F0F4C3;
          
     }
     #recomandation div {
