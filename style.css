@@ -2,7 +2,7 @@
 
 body {
 
-	background-color: #F0F4C3;
+	background-color: #F9FBE7;
 	font-family: 'montserratregular',"open sans", serif;
     font-size: 0.9em;	
     color: #212121;
@@ -136,7 +136,7 @@ main {
     }
     .box {	
         height: 40px;	
-        background-color: #F0F4C3;
+        background-color: #F9FBE7;
     }
     /*CONTACT*/
     dd {
@@ -163,7 +163,7 @@ main {
     #bloc_droite {
         display: block;    
         width: 67%;
-        background-color: #F0F4C3;    
+        background-color: #F9FBE7;    
     }
     .container {   
         display: flex;   
@@ -234,7 +234,7 @@ footer {
     #recommandation {
         display: block;  
         width: 67%; 
-        background-color: #F0F4C3;
+        background-color: #F9FBE7;
          
     }
     #recomandation div {
@@ -325,6 +325,11 @@ footer {
     /* IE10+ specific styles go here */  
     #bloc_droite {
         min-height:100vh;
+        display: flex;
+        flex-direction: column;
+ }
+ #page-container {
+
  }
 }
 /* Accessibilité */
