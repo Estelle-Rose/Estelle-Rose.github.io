@@ -1,0 +1,15 @@
+{
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "Projet numero 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "sass": "sass --watch sass/main.scss:css/style.css",
+   
+    "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
