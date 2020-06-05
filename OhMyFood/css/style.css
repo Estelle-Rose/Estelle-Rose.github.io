@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* kaushan-script-regular - latin */
 @font-face {
   font-family: "Kaushan Script";
@@ -55,6 +56,13 @@
   font-weight: 400;
   src: url("../fonts/segoepr.ttf") format("truetype"), url("../fonts/segoepr.woff") format("woff");
 }
+/* Marilattescript */
+@font-face {
+  font-family: "marilattescript";
+  font-weight: normal;
+  font-style: 400;
+  src: url("../fonts/marilatte-webfont.woff2") format("woff2"), url("../fonts/marilatte-webfont.woff") format("woff"), url("../fonts/Marilatte.ttf") format("truetype");
+}
 h1 {
   font-weight: 700;
   color: #353535;
@@ -64,11 +72,6 @@ h1 {
 .menu--note a, .menu--delice a, .menu--palette a {
   font-family: "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.5em;
-}
-
-.menu--chic h3 {
-  font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
 }
 
 /* All pages */
@@ -83,13 +86,18 @@ h1 {
   background: #fcdfdb;
 }
 .menu--note h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "devonshire", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3.3em;
-  font-weight: 200;
 }
 .menu--note h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "devonshire", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
 }
 .menu--note h4 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -99,23 +107,69 @@ h1 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9em;
 }
+.menu--note a {
+  text-transform: uppercase;
+  color: #3c1218;
+  margin-top: -0.8em;
+}
 
 /*page chic*/
 .menu--chic {
   background: #fff5fe;
 }
 .menu--chic h2 {
-  font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "marilattescript", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #c77412, #6e4ccc);
+  -webkit-background-clip: text;
+  background-color: #c77412;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 30px;
+  filter: brightness(130%);
+}
+.menu--chic h3 {
+  font-family: "marilattescript", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #c77412, #6e4ccc);
+  -webkit-background-clip: text;
+  background-color: #c77412;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 1em;
+  filter: brightness(130%);
+}
+.menu--chic a {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #c77412;
 }
 .menu--chic li {
   font-family: "montserrat", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu--chic .entrées {
+  color: #c77412;
+}
+.menu--chic .suites {
+  color: #a56799;
+}
+.menu--chic .desserts {
+  color: #6e4ccc;
 }
 
 /*page delice*/
 .menu--delice {
   background: #f9f9f9;
 }
-.menu--delice h3, .menu--delice p {
+.menu--delice h3 {
+  font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #055194, #0887f6 50%, #00d4ff 95%);
+  -webkit-background-clip: text;
+  font-size: 3em;
+}
+.menu--delice p {
   font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
   color: #0887f6;
   font-size: 3em;
@@ -123,9 +177,12 @@ h1 {
 }
 .menu--delice h2 {
   font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
-  color: #0887f6;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #055194, #0887f6 50%, #00d4ff 95%);
+  -webkit-background-clip: text;
   font-size: 3.5em;
   text-align: center;
+  padding-top: 30px;
 }
 .menu--delice h4 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -141,13 +198,36 @@ h1 {
 
 /*page palette*/
 .menu--palette {
-  background: #fcdfdb;
+  background: #fdfffd;
+}
+.menu--palette h3 {
+  font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #3c6f2a, #72bf56 50%, #61f72a 95%);
+  -webkit-background-clip: text;
+  font-size: 3em;
+  filter: brightness(110%);
 }
 .menu--palette h2 {
   font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left top, #3c6f2a, #72bf56 50%, #61f72a 95%);
+  -webkit-background-clip: text;
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 30px;
+  filter: brightness(110%);
 }
 .menu--palette li {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+}
+.menu--palette h4 {
+  font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+.menu--palette a {
+  color: #72bf56;
 }
 
 html, body {
@@ -161,6 +241,7 @@ html, body {
 }
 
 body {
+  max-width: 1500px;
   position: relative;
   margin: auto;
   background-color: #fff;
@@ -173,10 +254,15 @@ h1, h2, h3, h4 {
 
 .banner {
   background-color: #579c87;
-  height: 200px;
+  height: 170px;
   display: flex;
 }
-.banner img {
+.banner a {
+  font-family: "montserrat";
+  font-weight: 700;
+  color: #fdcb46;
+  text-decoration: none;
+  font-size: 4em;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -185,10 +271,11 @@ h1, h2, h3, h4 {
 }
 
 footer {
+  max-width: 1500px;
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   background-color: #579c87;
 }
 footer .footer__box {
@@ -201,13 +288,20 @@ footer a {
   display: flex;
   color: #fdcb46;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 main {
-  max-width: 1500px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .accueil {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .bloc-menu {
@@ -215,10 +309,13 @@ main {
   justify-content: space-around;
   padding: 2rem;
 }
-.bloc-menu.bas {
-  padding-bottom: 90px;
+@media (min-width: 1200px) {
+  .bloc-menu {
+    justify-content: space-evenly;
+    padding: 2rem 0 2rem 1rem;
+  }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .bloc-menu {
     flex-direction: column;
     align-items: center;
@@ -231,16 +328,24 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 1rem 1rem 3rem;
+  margin: 2rem 1rem 1rem 2rem;
   padding-top: 2rem;
-  width: 48vw;
-  height: 68vh;
+  width: 450px;
+  height: 700px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transform: scale(1);
   transition: transform 500ms;
 }
 .menu:hover {
   transform: scale(1.1);
+}
+@media (min-width: 1200px) {
+  .menu {
+    width: 30vh;
+    height: 45vh;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .menu a {
   text-decoration: none;
@@ -251,14 +356,14 @@ main {
   margin-right: auto;
   text-align: center;
 }
-@media (max-width: 940px) {
+@media (max-width: 992px) {
   .menu {
     width: 40vw;
     height: 55vh;
     margin: 1rem 0 1rem 0;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .menu {
     width: 65vw;
     height: 65vh;
@@ -285,7 +390,7 @@ main {
   display: flex;
   color: #fdcb46;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 /*PAGES*/
@@ -296,11 +401,17 @@ main {
 
 .menu-page {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  width: 70vw;
+  width: 650px;
   margin: 0 auto 200px auto;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 750px) {
+  .menu-page {
+    max-width: 70%;
+  }
 }
 .menu-page ul {
   display: flex;
@@ -319,6 +430,9 @@ main {
   padding-left: 40px;
   padding-right: 40px;
   list-style-type: none;
+}
+.menu-page .plats {
+  padding-bottom: 50px;
 }
 .menu-page .desserts ul {
   display: flex;
@@ -373,6 +487,15 @@ main {
 
 .note-img {
   width: 50px;
+}
+
+/* Couleurs et dégradés */
+.suites .image-gauche, .suites .image-droite {
+  filter: brightness(165%);
+}
+
+.suites-2 .image-gauche, .suites-2 .image-droite {
+  filter: brightness(255%);
 }
 
 /*# sourceMappingURL=style.css.map */
