@@ -91,6 +91,9 @@ footer {
         margin-left: 20px;
         margin-right: 20px;        
     }  
+    @media (max-width: 750px) {
+        margin-left: 1rem;
+    }
      
     }
  }
@@ -151,7 +154,7 @@ footer {
     padding-top: 3rem;
     padding-bottom: 2rem;
     @media (max-width: 750px) {
-        max-width: 70%;
+        max-width: 75%;
     }
     ul {
         display: flex;
@@ -184,8 +187,7 @@ footer {
     align-items: center;
 }
 .image-gauche, .image-droite {
-    width: 33%;
-  
+    width: 33%;  
     @media (max-width:750px) {
         width: 28%;
        
@@ -232,4 +234,7 @@ footer {
 }
 .image-delice-2 {    
         filter: brightness(265%)  
+}
+.entrées img {
+    width: 28%;
 }
