@@ -4,15 +4,13 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 } 
 * {
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1500px;
+body {    
     position: relative;    
     margin: auto;   
     background-color: $color-white;
@@ -21,120 +19,93 @@ body {
 h1, h2, h3, h4 {
     text-align: center;
 }
+/*HEADER*/
 .banner {     
     background-color: $color-primary;
     height: 170px;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;    
            
-    a {   
+    h1 a {   
         font-family: 'montserrat';
         font-weight: 700;
-        color: $color-secondary;
-        text-decoration: none;
-        font-size: 4em;
-        display: flex;
-        justify-content: center;
-        margin: auto;  
-        width: 300px; 
-        height: auto;        
+        color: $color-secondary;              
+        font-size: 2.5em;        
+        margin: auto;
+        @media (max-width: 767px) {
+            font-size: 1.4em;
+        }            
     }
 }
-footer {
-    max-width: 1500px;
+
+/*FOOTER*/
+footer {   
     position: fixed;
     bottom: 0px;
     width: 100%;
     height: 10vh;    
-    background-color: $color-primary;      
-   .footer__box {
-    display: flex;
+    background-color: $color-primary;   
+    display: flex;     
     justify-content: space-between;
     margin: auto;
-    padding: 2rem 2rem 2rem 2rem;
-   }
+   
     a {
-        display: flex;        
+        display: flex;
+        align-items: center;        
         color: $color-secondary;
-        text-decoration: none;
         font-size: 1.6em;
+        padding: 1rem;
+        @media screen and (max-width: 767px) {
+            font-size: 1.2em;
+        }
     }
-}
-main {
-    
-    display: flex;
-    flex-direction: column;
-}
+} 
+/*MAIN*/ 
+
+
 .accueil {
-    @media (min-width:1200px) {        
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+    @media (min-width:1200px) {               
         flex-direction: row;  
         justify-content: center;  
         padding-bottom: 1.5rem; 
     }
- }
-.bloc-menu{    
-    display: flex;
-    justify-content: space-around; 
-    padding: 2rem;
-    
-    
-    @media (min-width: 1200px) {             
-        justify-content: space-evenly;      
-        padding: 2rem 0 2rem 1rem;
-    }
-    @media screen and (max-width: 767px) {
-        flex-direction: column;        
-        align-items: center;
-        padding-bottom: 0;
-    }
-    
-}
-.menu {
+    a {   
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 2rem 1rem 1rem 2rem;
-    padding-top: 2rem;;
-    width: 450px;
-    height: 700px;  
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transform: scale(1);
-        transition: transform 500ms;
-        &:hover {
-            transform: scale(1.10);
-    } 
+    padding-top: 1rem;
+    width: 430px;
+    height: 600px;  
     @media (min-width:1200px) {
-        width: 30vh;
+        width: 35vh;
         height: 45vh;
         margin-left: 20px;
-        margin-right: 20px;
-        
+        margin-right: 20px;        
+    }  
+     
     }
-    
-    a {
-        text-decoration: none;
-        display: block;
-        height: 15vh;
-        width: 25vh;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    @media (max-width: 992px) {
-        width: 40vw;
-        height: 55vh;  
-        margin: 1rem 0 1rem 0;
-    }
-    @media (max-width: 767px) {
-        width: 65vw;
-        height: 65vh;  
-        margin: 1rem 0 2rem 0;
-    }
-    
-}
+ }
+ .menu {    
+     display: flex;
+     flex-direction: column;
+     align-items: center;       
+ }
+
+ 
+
+/*PROCHAINEMENT*/
 .container {
    
     height: 20vh;
+    margin-top: 30px;
     margin-bottom: 10vh;    
 }
 .btn {
@@ -142,7 +113,7 @@ main {
     display: flex;    
     justify-content: center;        
     align-items: center;
-    width: 40%;
+    width: 300px;
     height:80px;
     border-radius: 1rem;
     background-color: $color-primary;
@@ -155,7 +126,10 @@ main {
 }
 
 /*PAGES*/
-
+.bloc-menu {
+    display: flex;
+    flex-direction: column;
+}
 .menu-name {
     text-align: center;
     margin-top: 35px;

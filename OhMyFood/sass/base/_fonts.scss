@@ -76,28 +76,15 @@
     src: url('../fonts/segoepr.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/segoepr.woff') format('woff'), /* Modern Browsers */
   }
-/* Marilattescript */ 
-  @font-face {
-    font-family: 'marilattescript';
+/* Croissant-one egular */ 
+@font-face {
+    font-family: 'croissant_one';
+    src: url('../fonts/croissantone-regular-webfont.woff2') format('woff2'),
+    url('../fonts/CroissantOne-Regular.ttf') format('truetype'),
+         url('../fonts/croissantone-regular-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: 400;
-    src: url('../fonts/marilatte-webfont.woff2') format('woff2'),
-         url('../fonts/marilatte-webfont.woff') format('woff'),
-         url('../fonts/Marilatte.ttf') format('truetype'); 
+    font-style: normal;
 
-}
-
-h1 {
-    font-weight: 700;
-    color: #353535;
-}
-/* Accueil */
-
-.menu--note, .menu--delice, .menu--palette {
-    a {
-        font-family: 'Segoe print', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 2.5em;
-    }
 }
 
 /* All pages */
@@ -106,6 +93,14 @@ h1 {
     font-weight: 700;
     color: #353535;
 }
+a {
+    text-decoration: none;
+}
+p {
+    margin-top: -25px;;
+}
+/* Accueil */
+
 /* Page Note */
 
 .menu--note {
@@ -119,12 +114,11 @@ h1 {
         font-size: 3.3em;
         
     }
-    h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .titre {
+        text-transform: initial;       
         font-family: 'devonshire', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 3em;
+        font-size: 2.6em;
+        margin-top: 0;
     }
     h4 {
         font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
@@ -134,18 +128,22 @@ h1 {
         font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         font-size: 0.9em;
     }
-    a {
-        text-transform: uppercase;
+    p {
+        font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-note;
-        margin-top: -0.8em;;
+        font-size: 3em;
+        text-align: center;
+        text-transform: uppercase;
     }
+    
+   
 }
 /*page chic*/
 
   .menu--chic {
     background: $menu-chic;
     h2 {
-        font-family: 'marilattescript',Tahoma, Geneva, Verdana, sans-serif;      
+        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;      
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(left top, $color-chic , #6e4ccc  );        
         -webkit-background-clip: text; 
@@ -155,22 +153,23 @@ h1 {
         padding-top: 30px;       
         filter: brightness(130%);
     }
-    h3 {
-        font-family: 'marilattescript',Tahoma, Geneva, Verdana, sans-serif;      
+    .titre {
+        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;      
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(left top, $color-chic , #6e4ccc  );        
         -webkit-background-clip: text; 
         background-color: $color-chic;       
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: center;
         padding-top: 30px;
-        line-height: 1em;
+        
         filter: brightness(130%);
     }
-    a {
-        font-size: 2.5em;
-        font-weight: 700;
+    p {
+        font-family: 'montserrat bold',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-chic;
+        font-size: 3em;
+        text-align: center;
     }
     li {
         font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;
@@ -188,15 +187,15 @@ h1 {
   /*page delice*/
   .menu--delice {
     background: $menu-delice;
-    h3 {
+    .titre {
         font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(left top, #055194, $color-delice 50%, #00d4ff 95% );        
         -webkit-background-clip: text; 
-        font-size: 3em; 
+        font-size: 3em;         
     }
     p {
-        font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-delice;
         font-size: 3em;
         text-align: center;
@@ -218,20 +217,21 @@ h1 {
         font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         font-size: 0.9em;
     }
-    a {
-        color: $color-delice;
-    }
+    
   }
 /*page palette*/
   .menu--palette {
       background: $menu-palette;
-      h3 {
+      .titre {
         font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(left top,#3c6f2a, $color-palette 50%, #61f72a 95% );        
         -webkit-background-clip: text;        
         font-size: 3em; 
         filter: brightness(110%);
+        @media (max-width: 767px) {
+            font-size: 2.5em;
+        } 
     }
     h2 {
         font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;
@@ -251,7 +251,11 @@ h1 {
         font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1em;
     }
-    a {
+    
+    p {
+        font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-palette;
+        font-size: 3em;
+        text-align: center;
     }
   }

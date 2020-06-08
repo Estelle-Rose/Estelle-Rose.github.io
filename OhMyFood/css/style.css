@@ -56,30 +56,28 @@
   font-weight: 400;
   src: url("../fonts/segoepr.ttf") format("truetype"), url("../fonts/segoepr.woff") format("woff");
 }
-/* Marilattescript */
+/* Croissant-one egular */
 @font-face {
-  font-family: "marilattescript";
+  font-family: "croissant_one";
+  src: url("../fonts/croissantone-regular-webfont.woff2") format("woff2"), url("../fonts/CroissantOne-Regular.ttf") format("truetype"), url("../fonts/croissantone-regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: 400;
-  src: url("../fonts/marilatte-webfont.woff2") format("woff2"), url("../fonts/marilatte-webfont.woff") format("woff"), url("../fonts/Marilatte.ttf") format("truetype");
+  font-style: normal;
 }
-h1 {
-  font-weight: 700;
-  color: #353535;
-}
-
-/* Accueil */
-.menu--note a, .menu--delice a, .menu--palette a {
-  font-family: "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.5em;
-}
-
 /* All pages */
 h1 {
   font-weight: 700;
   color: #353535;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: -25px;
+}
+
+/* Accueil */
 /* Page Note */
 .menu--note {
   color: #3c1218;
@@ -92,12 +90,11 @@ h1 {
   font-family: "devonshire", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3.3em;
 }
-.menu--note h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.menu--note .titre {
+  text-transform: initial;
   font-family: "devonshire", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3em;
+  font-size: 2.6em;
+  margin-top: 0;
 }
 .menu--note h4 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -107,10 +104,12 @@ h1 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9em;
 }
-.menu--note a {
-  text-transform: uppercase;
+.menu--note p {
+  font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   color: #3c1218;
-  margin-top: -0.8em;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*page chic*/
@@ -118,7 +117,7 @@ h1 {
   background: #fff5fe;
 }
 .menu--chic h2 {
-  font-family: "marilattescript", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "croissant_one", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left top, #c77412, #6e4ccc);
   -webkit-background-clip: text;
@@ -128,22 +127,22 @@ h1 {
   padding-top: 30px;
   filter: brightness(130%);
 }
-.menu--chic h3 {
-  font-family: "marilattescript", Tahoma, Geneva, Verdana, sans-serif;
+.menu--chic .titre {
+  font-family: "croissant_one", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left top, #c77412, #6e4ccc);
   -webkit-background-clip: text;
   background-color: #c77412;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   padding-top: 30px;
-  line-height: 1em;
   filter: brightness(130%);
 }
-.menu--chic a {
-  font-size: 2.5em;
-  font-weight: 700;
+.menu--chic p {
+  font-family: "montserrat bold", Tahoma, Geneva, Verdana, sans-serif;
   color: #c77412;
+  font-size: 3em;
+  text-align: center;
 }
 .menu--chic li {
   font-family: "montserrat", Tahoma, Geneva, Verdana, sans-serif;
@@ -162,7 +161,7 @@ h1 {
 .menu--delice {
   background: #f9f9f9;
 }
-.menu--delice h3 {
+.menu--delice .titre {
   font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left top, #055194, #0887f6 50%, #00d4ff 95%);
@@ -170,7 +169,7 @@ h1 {
   font-size: 3em;
 }
 .menu--delice p {
-  font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   color: #0887f6;
   font-size: 3em;
   text-align: center;
@@ -192,21 +191,23 @@ h1 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9em;
 }
-.menu--delice a {
-  color: #0887f6;
-}
 
 /*page palette*/
 .menu--palette {
   background: #fdfffd;
 }
-.menu--palette h3 {
+.menu--palette .titre {
   font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left top, #3c6f2a, #72bf56 50%, #61f72a 95%);
   -webkit-background-clip: text;
   font-size: 3em;
   filter: brightness(110%);
+}
+@media (max-width: 767px) {
+  .menu--palette .titre {
+    font-size: 2.5em;
+  }
 }
 .menu--palette h2 {
   font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
@@ -226,8 +227,11 @@ h1 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
 }
-.menu--palette a {
+.menu--palette p {
+  font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   color: #72bf56;
+  font-size: 3em;
+  text-align: center;
 }
 
 html, body {
@@ -241,7 +245,6 @@ html, body {
 }
 
 body {
-  max-width: 1500px;
   position: relative;
   margin: auto;
   background-color: #fff;
@@ -252,50 +255,59 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+/*HEADER*/
 .banner {
   background-color: #579c87;
   height: 170px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner a {
+.banner h1 a {
   font-family: "montserrat";
   font-weight: 700;
   color: #fdcb46;
-  text-decoration: none;
-  font-size: 4em;
-  display: flex;
-  justify-content: center;
+  font-size: 2.5em;
   margin: auto;
-  width: 300px;
-  height: auto;
+}
+@media (max-width: 767px) {
+  .banner h1 a {
+    font-size: 1.4em;
+  }
 }
 
+/*FOOTER*/
 footer {
-  max-width: 1500px;
   position: fixed;
   bottom: 0px;
   width: 100%;
   height: 10vh;
   background-color: #579c87;
-}
-footer .footer__box {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 2rem 2rem 2rem 2rem;
 }
 footer a {
   display: flex;
+  align-items: center;
   color: #fdcb46;
-  text-decoration: none;
   font-size: 1.6em;
+  padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  footer a {
+    font-size: 1.2em;
+  }
 }
 
-main {
+/*MAIN*/
+.accueil {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
 @media (min-width: 1200px) {
   .accueil {
     flex-direction: row;
@@ -303,76 +315,35 @@ main {
     padding-bottom: 1.5rem;
   }
 }
-
-.bloc-menu {
+.accueil a {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 1rem 1rem 2rem;
+  padding-top: 1rem;
+  width: 430px;
+  height: 600px;
 }
 @media (min-width: 1200px) {
-  .bloc-menu {
-    justify-content: space-evenly;
-    padding: 2rem 0 2rem 1rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .bloc-menu {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0;
+  .accueil a {
+    width: 35vh;
+    height: 45vh;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 2rem 1rem 1rem 2rem;
-  padding-top: 2rem;
-  width: 450px;
-  height: 700px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transform: scale(1);
-  transition: transform 500ms;
-}
-.menu:hover {
-  transform: scale(1.1);
-}
-@media (min-width: 1200px) {
-  .menu {
-    width: 30vh;
-    height: 45vh;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-.menu a {
-  text-decoration: none;
-  display: block;
-  height: 15vh;
-  width: 25vh;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-@media (max-width: 992px) {
-  .menu {
-    width: 40vw;
-    height: 55vh;
-    margin: 1rem 0 1rem 0;
-  }
-}
-@media (max-width: 767px) {
-  .menu {
-    width: 65vw;
-    height: 65vh;
-    margin: 1rem 0 2rem 0;
-  }
 }
 
+/*PROCHAINEMENT*/
 .container {
   height: 20vh;
+  margin-top: 30px;
   margin-bottom: 10vh;
 }
 
@@ -381,7 +352,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 300px;
   height: 80px;
   border-radius: 1rem;
   background-color: #579c87;
@@ -394,6 +365,11 @@ main {
 }
 
 /*PAGES*/
+.bloc-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-name {
   text-align: center;
   margin-top: 35px;
