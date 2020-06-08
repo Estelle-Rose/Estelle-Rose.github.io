@@ -122,7 +122,7 @@ p {
   background: -webkit-linear-gradient(left top, #c77412, #6e4ccc);
   -webkit-background-clip: text;
   background-color: #c77412;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   padding-top: 30px;
   filter: brightness(130%);
@@ -166,7 +166,9 @@ p {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left top, #055194, #0887f6 50%, #00d4ff 95%);
   -webkit-background-clip: text;
-  font-size: 3em;
+  font-size: 2.9em;
+  text-align: center;
+  padding-top: 30px;
 }
 .menu--delice p {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -203,6 +205,7 @@ p {
   -webkit-background-clip: text;
   font-size: 3em;
   filter: brightness(110%);
+  padding-top: 30px;
 }
 @media (max-width: 767px) {
   .menu--palette .titre {
@@ -226,6 +229,8 @@ p {
 .menu--palette h4 {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .menu--palette p {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -321,9 +326,8 @@ footer a {
   flex-direction: column;
   justify-content: center;
   margin: 2rem 1rem 1rem 2rem;
-  padding-top: 1rem;
-  width: 430px;
-  height: 600px;
+  width: 450px;
+  height: 650px;
 }
 @media (min-width: 1200px) {
   .accueil a {
@@ -337,7 +341,13 @@ footer a {
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  transform: scale(0.9);
+  transition: transform 400ms;
+}
+.menu:hover {
+  transform: scale(1);
 }
 
 /*PROCHAINEMENT*/
@@ -424,12 +434,10 @@ footer a {
 
 .image-gauche, .image-droite {
   width: 33%;
-  height: 10vh;
 }
 @media (max-width: 750px) {
   .image-gauche, .image-droite {
     width: 28%;
-    height: 8vh;
   }
 }
 
@@ -466,12 +474,12 @@ footer a {
 }
 
 /* Couleurs et dégradés */
-.suites .image-gauche, .suites .image-droite {
+.image-delice {
   filter: brightness(165%);
 }
 
-.suites-2 .image-gauche, .suites-2 .image-droite {
-  filter: brightness(255%);
+.image-delice-2 {
+  filter: brightness(265%);
 }
 
 /*# sourceMappingURL=style.css.map */
