@@ -1,4 +1,5 @@
 @import "./utils/variables.scss";
+@import "./utils/mixins";
 @import "./base/fonts.scss";
 
 html, body {
@@ -32,10 +33,10 @@ h1, h2, h3, h4 {
         font-family: 'montserrat';
         font-weight: 700;
         color: $color-secondary;              
-        font-size: 2.5em;        
+        font-size: 1.4em;        
         margin: auto;
-        @media (max-width: 767px) {
-            font-size: 1.4em;
+        @media (min-width: 767px) {
+            font-size: 2.5em;
         }            
     }
 }
@@ -55,11 +56,28 @@ footer {
         display: flex;
         align-items: center;        
         color: $color-secondary;
-        font-size: 1.6em;
+        font-size: 1.2em;
         padding: 1rem;
-        @media screen and (max-width: 767px) {
-            font-size: 1.2em;
+        @media screen and (min-width: 767px) {
+            font-size: 1.6em;
         }
+        &:hover {
+        animation: wiggle 0.9s;
+        animation-iteration-count: infinite;
+        }
+        @keyframes wiggle {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+          }
     }
 } 
 /*MAIN*/ 
@@ -81,18 +99,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 1rem 1rem 2rem;
-   
+    margin: 2rem 1rem 1rem 1rem;   
     width: 450px;
     height: 650px;  
     @media (min-width:1200px) {
-        width: 35vh;
+        width: 33vh;
         height: 45vh;
-        margin-left: 20px;
         margin-right: 20px;        
     }  
-    @media (max-width: 750px) {
-        margin-left: 1rem;
+    @media (min-width: 750px) {
+        margin-left: 2rem;
     }
      
     }
@@ -103,9 +119,11 @@ footer {
      justify-content: center;
      align-items: center;  
      transform: scale(0.9);
-     transition: transform 400ms;
+     opacity: 0.85;
+     transition: transform 800ms opacity 600ms;
      &:hover {
          transform: scale(1);
+         opacity: 1;
      }
      
  }
@@ -124,15 +142,37 @@ footer {
     display: flex;    
     justify-content: center;        
     align-items: center;
-    width: 300px;
+    width: 330px;
     height:80px;
     border-radius: 1rem;
-    background-color: $color-primary;
-    a {
-        display: flex;               
-        color: #fdcb46;
-        text-decoration: none;
-        font-size: 2.2em;
+    background-color: $color-primary;            
+    color: #fdcb46;        
+    font-size: 1.9em;
+    
+}
+.one, .two, .three {
+    font-size: 2.1em;
+    margin-top: -28px;
+    margin-left: 5px;
+    opacity: 0;
+    animation: dots 1.6s infinite;
+}
+
+.two {
+    animation-delay: 0.2s;
+}
+.three {
+    animation-delay: 0.5s;
+}
+@keyframes dots {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -147,24 +187,28 @@ footer {
 }
 .menu-page {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 650px;
+    max-width: 75%;
     margin: 0 auto 200px auto;
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    @media (max-width: 750px) {
-        max-width: 75%;
+    @media (min-width: 750px) {
+       width: 700px;
     }
     ul {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;           
         margin-left: -25px;
-        @media (max-width:750px) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;           
+        @media (min-width:750px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;   
+            text-align: left;  
+            align-items: flex-start; 
         }        
     }
     li {
@@ -187,10 +231,9 @@ footer {
     align-items: center;
 }
 .image-gauche, .image-droite {
-    width: 33%;  
-    @media (max-width:750px) {
-        width: 28%;
-       
+    width: 28%;  
+    @media (min-width:750px) {
+        width: 33%;       
     }
 }
 
@@ -243,7 +286,7 @@ footer {
 
 .mentions {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 650px;
+    width: 400px;
     margin: 0 auto 200px auto;
     display: flex;
     flex-direction: column;
@@ -255,7 +298,7 @@ footer {
     p {
         line-height: 1.6rem;;
     }
-    @media (max-width: 750px) {
-        max-width: 75%;
+    @media (min-width: 750px) {
+       width: 700px;
     }
 }
