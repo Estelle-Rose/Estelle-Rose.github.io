@@ -111,8 +111,16 @@ h4 {
   opacity: 0.7;
   padding-bottom: 3px;
 }
-h4:hover {
+h4::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding-top: 3px;
   border-bottom: 2px solid currentColor;
+  transition: 0.5s ease;
+}
+h4:hover::after {
+  width: 100%;
 }
 
 /* Page Note */
@@ -140,6 +148,7 @@ h4:hover {
   color: #f15861;
   background: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4em;
 }
@@ -157,9 +166,11 @@ h4:hover {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(to bottom right, #c77412 30%, #6e4ccc);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-color: #c77412;
   padding-top: 30px;
   filter: brightness(130%);
+  font-size: 35px;
 }
 .menu--chic p {
   font-family: "montserrat bold", Tahoma, Geneva, Verdana, sans-serif;
@@ -192,6 +203,7 @@ h4:hover {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(to bottom right, #055194, #0887f6 50%, #00d4ff 95%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   padding-top: 30px;
   padding-left: 10px;
 }
@@ -206,8 +218,9 @@ h4:hover {
 .menu--palette h3 {
   font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(left top, #3c6f2a, #72bf56 50%, #61f72a 95%);
+  background: linear-gradient(to bottom right, #3c6f2a 20%, #72bf56 70%, #61f72a 95%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   padding-top: 30px;
   filter: brightness(110%);
 }
@@ -265,27 +278,18 @@ footer a {
   }
 }
 footer a:hover {
-  animation: wiggle 0.6s;
+  animation: shake 1s;
   animation-iteration-count: infinite;
 }
-@keyframes wiggle {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0);
   }
-  20% {
-    transform: translate(-2px, -2px) rotate(1deg);
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(5px);
   }
-  40% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  60% {
-    transform: translate(-3px, -3px) rotate(1deg);
-  }
-  80% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(-1px, -1px) rotate(1deg);
+  20%, 40%, 60%, 80% {
+    transform: translateX(-5px);
   }
 }
 
@@ -359,31 +363,34 @@ footer a:hover {
   font-size: 1.9em;
 }
 
-.one, .two, .three {
-  font-size: 2.1em;
-  margin-top: -28px;
-  margin-left: 5px;
-  opacity: 0;
-  animation: dots 1.6s infinite;
+.dots {
+  margin-left: 15px;
+}
+.dots span {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #fdcb46;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-.two {
-  animation-delay: 0.2s;
-}
-
-.three {
+.dots span:nth-child(2) {
   animation-delay: 0.5s;
 }
 
+.dots span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
 @keyframes dots {
-  0% {
-    opacity: 0;
-  }
   50% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    transform: scale(0.7);
   }
 }
 /*PAGES*/
@@ -484,8 +491,11 @@ footer a:hover {
   align-items: center;
 }
 .footer-note .fas {
+  font-size: 2em;
+  padding-right: 20px;
+}
+.footer-note h3 {
   font-size: 2.5em;
-  margin-right: 10px;
 }
 
 .menu-page--note .image-droite {
