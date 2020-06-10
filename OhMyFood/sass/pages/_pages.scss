@@ -1,0 +1,125 @@
+/*PAGES*/
+.bloc-menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu-name {
+    text-align: center;
+    margin-top: 35px;
+}
+.menu-page {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    max-width: 75%;
+    margin: 0 auto 200px auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    @media (min-width: 750px) {
+       width: 700px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;           
+        margin-left: -25px;
+        @media (min-width:750px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;   
+            text-align: left;  
+            align-items: flex-start; 
+        }        
+    }
+    li {
+        padding-left: 40px;
+        padding-right: 40px;;
+        list-style-type: none;
+    }  
+    .plats {
+        padding-bottom: 50px;
+    }  
+    .desserts ul{
+        display: flex;
+        flex-direction: column;
+        line-height: 2em;       
+    }
+}
+.separateurs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-gauche, .image-droite {
+    width: 28%;  
+    @media (min-width:750px) {
+        width: 33%;       
+    }
+}
+
+/* page note */
+
+.note {
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding-top: 50px;
+    .fas, .fa{
+        margin-bottom: -40px;;
+       font-size: 4em;
+    }
+    
+}
+.footer-note {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .fas {
+        font-size: 2.5em;
+        margin-right: 10px;;
+    }
+    
+}
+.menu-page--note {
+    .image-droite {
+        margin-top: 10px;
+    }
+}
+
+/* Couleurs et dégradés */ 
+.image-delice {  
+    
+        filter: brightness(165%)    
+}
+.image-delice-2 {    
+        filter: brightness(265%)  
+}
+.entrées img {
+    width: 28%;
+}
+
+/*MENTIOSN LÉGALES */ 
+
+.mentions {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 400px;
+    margin: 0 auto 200px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem 2rem 1rem;
+    margin-top: 2rem;
+    h3 {
+        padding-bottom: 1rem;;
+    }
+    p {
+        line-height: 1.6rem;;
+    }
+    @media (min-width: 750px) {
+       width: 700px;
+    }
+}

@@ -1,0 +1,20 @@
+/*HEADER*/
+.banner {     
+    background-color: $color-primary;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+           
+    h1 a {   
+        font-family: 'montserrat';
+        font-weight: 700;
+        color: $color-secondary;              
+        font-size: 1.4em;        
+        margin: auto;
+        @media (min-width: 767px) {
+            font-size: 2.5em;
+        }            
+    }
+}

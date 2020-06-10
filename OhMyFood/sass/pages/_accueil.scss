@@ -1,0 +1,91 @@
+/*MAIN*/ 
+
+
+.accueil {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    
+    @media (min-width:1200px) {               
+        flex-direction: row;  
+        justify-content: center;  
+        padding-bottom: 1.5rem; 
+    }
+    a {   
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 1rem 1rem 1rem;   
+    width: 450px;
+    height: 650px;  
+    @media (min-width:1200px) {
+        width: 33vh;
+        height: 45vh;
+        margin-right: 20px;        
+    }  
+    @media (min-width: 750px) {
+        margin-left: 2rem;
+    }
+     
+    }
+ }
+ .menu {    
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;  
+     transform: scale(0.9);
+     opacity: 0.85;
+     transition: transform 800ms opacity 600ms;
+     &:hover {
+         transform: scale(1);
+         opacity: 1;
+     }     
+ }
+ /*PROCHAINEMENT*/
+.container {
+   
+    height: 20vh;
+    margin-top: 30px;
+    margin-bottom: 10vh;    
+}
+.btn {
+    margin: auto;    
+    display: flex;    
+    justify-content: center;        
+    align-items: center;
+    width: 330px;
+    height:80px;
+    border-radius: 1rem;
+    background-color: $color-primary;            
+    color: #fdcb46;        
+    font-size: 1.9em;
+    
+}
+.one, .two, .three {
+    font-size: 2.1em;
+    margin-top: -28px;
+    margin-left: 5px;
+    opacity: 0;
+    animation: dots 1.6s infinite;
+}
+
+.two {
+    animation-delay: 0.2s;
+}
+.three {
+    animation-delay: 0.5s;
+}
+@keyframes dots {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

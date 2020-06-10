@@ -1,0 +1,151 @@
+/* All pages */
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+h4, li, p {
+    font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {    
+    font-size: 2em;
+    color: #353535;
+}
+h3 {
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    font-size: 0.9em;
+    opacity: 0.8;    
+}
+.prix {
+    font-size: 1em;;
+    opacity: 1;
+}
+p {
+    font-size: 3em;
+    margin-top: -25px;;
+}
+.menu-page {
+    @media (min-width: 767px) {
+        padding: 1rem;
+    }
+}
+h4 {
+    font-size: 1em;
+    opacity: 0.7;
+    padding-bottom: 3px;
+    &:hover {
+        border-bottom: 2px solid currentColor;        
+    }        
+    }
+/* Page Note */
+
+.menu--note {
+    color: $color-note;
+    background: $menu-note;
+    h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'devonshire', Tahoma, Geneva, Verdana, sans-serif;              
+    }
+    
+    p {
+        font-family: 'segoe print',Tahoma, Geneva, Verdana, sans-serif;        
+        text-transform: uppercase;
+    }
+    .titre {
+        text-transform: initial;       
+        font-family: 'devonshire', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3em;
+        margin-top: 0;
+    }
+    .fas {
+        color: #f15861;
+        background: linear-gradient( to bottom right,#f15861 40%, #f78f6a 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+    }
+    h4 {
+        font-size: 1.2em;
+        opacity: 1;
+    }
+   
+}
+/*page chic*/
+
+  .menu--chic {
+    background: $menu-chic;
+    h3 {
+        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;      
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to bottom right, $color-chic 30%, #6e4ccc);        
+        -webkit-background-clip: text;
+        background-color: $color-chic;         
+        padding-top: 30px;       
+        filter: brightness(130%);
+    }
+    
+    p {
+        font-family: 'montserrat bold',Tahoma, Geneva, Verdana, sans-serif;
+        color: $color-chic;      
+    }
+    h4 {
+        position: relative;
+        font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;        
+        margin: 0 1rem;
+        
+    }
+    li {
+        font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;       
+    }
+    .entrées {
+        color: $color-chic;
+    }
+    .suites {
+        color: #a56799;
+    }
+    .desserts {
+        color: #6e4ccc;
+    }
+  }
+  
+  /*page delice*/
+  .menu--delice {
+    background: $menu-delice;   
+    h3 {
+        font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-text-fill-color: transparent;
+        background:linear-gradient(to bottom right, #055194, $color-delice 50%, #00d4ff 95% );         
+        -webkit-background-clip: text;       
+        padding-top: 30px;
+        padding-left: 10px;
+    }    
+    p {       
+        color: $color-delice;           
+    }
+    
+  }
+/*page palette*/
+  .menu--palette {
+      background: $menu-palette;
+      
+    h3 {
+        font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(left top,#3c6f2a, $color-palette 50%, #61f72a 95% );        
+        -webkit-background-clip: text;      
+        padding-top: 30px;
+        filter: brightness(110%);       
+    }    
+    h4 {               
+        padding-left: 20px;
+        padding-right: 20px;
+    }    
+    p {
+        color: $color-palette;       
+    }
+  }
