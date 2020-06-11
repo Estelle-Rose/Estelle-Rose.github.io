@@ -1,18 +1,21 @@
 $color-primary: #579c87;
 $color-secondary: #fdcb46;
 $color-white: #fff;
-
-$menu_note: #fcdfdb;
-$menu_chic: #fff5fe;
-$menu_delice: #f9f9f9;
-$menu_palette: #fdfffd;
 $color-delice: #0887f6;
 $color-note: #3c1218;
 $color-chic: #c77412;
 $color-palette: #72bf56;
-$menu-color: (
-    $menu_chic: #fff5fe,
-$menu_delice: #f9f9f9,
-$menu_palette: #fdfffd,
-$color-delice: #0887f6,
-);
+
+$gradients: () !default;
+$gradients: map-merge((
+    note: linear-gradient( to bottom right,#f15861 40%, #f78f6a 80%) ,
+    chic: linear-gradient(to bottom right, $color-chic 30%, #6e4ccc),
+    delice: linear-gradient(to bottom right, #055194, $color-delice 50%, #00d4ff 95% ),
+    palette: linear-gradient(to bottom right,#3c6f2a 20%, $color-palette 70%, #61f72a 95% )), $gradients);
+
+$backgrounds: () !default;
+$backgrounds: map-merge((
+    note:  #fcdfdb ,
+    chic:   #fff5fe,
+    delice: #f9f9f9,
+    palette:  #fdfffd), $backgrounds);

@@ -35,6 +35,7 @@ p {
 h4 {
     font-size: 1em;
     opacity: 0.7;
+   padding-top: 15px;
     padding-bottom: 3px;
     
    &::after {
@@ -43,7 +44,8 @@ h4 {
     width: 0%;
     padding-top: 3px;
     border-bottom: 2px solid currentColor;
-    transition: 0.5s ease;
+    opacity: 0.7;
+    transition: width 1s ease;
     }
     &:hover::after {
     width: 100%;
@@ -54,7 +56,7 @@ h4 {
 
 .menu--note {
     color: $color-note;
-    background: $menu-note;
+    
     h3 {
         display: flex;
         flex-direction: column;
@@ -83,20 +85,16 @@ h4 {
     h4 {
         font-size: 1.2em;
         opacity: 1;
+        margin: 0 1rem;
     }
    
 }
 /*page chic*/
 
   .menu--chic {
-    background: $menu-chic;
+    
     h3 {
-        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;      
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to bottom right, $color-chic 30%, #6e4ccc);        
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-color: $color-chic;         
+        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;                
         padding-top: 30px;       
         filter: brightness(130%);
         font-size: 35px;
@@ -126,13 +124,9 @@ h4 {
   
   /*page delice*/
   .menu--delice {
-    background: $menu-delice;   
+    
     h3 {
-        font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;
-        -webkit-text-fill-color: transparent;
-        background:linear-gradient(to bottom right, #055194, $color-delice 50%, #00d4ff 95% );         
-        -webkit-background-clip: text;  
-        -moz-background-clip: text;     
+        font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;         
         padding-top: 30px;
         padding-left: 10px;
     }    
@@ -143,14 +137,10 @@ h4 {
   }
 /*page palette*/
   .menu--palette {
-      background: $menu-palette;
+     
       
     h3 {
-        font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to bottom right,#3c6f2a 20%, $color-palette 70%, #61f72a 95% );        
-        -webkit-background-clip: text;
-        -moz-background-clip: text;      
+        font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;          
         padding-top: 30px;
         filter: brightness(110%);  
             

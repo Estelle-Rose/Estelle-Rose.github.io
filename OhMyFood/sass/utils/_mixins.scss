@@ -1,3 +1,4 @@
+    // Breakpoints
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "small" {
       @media (min-width: 767px) {
@@ -17,3 +18,28 @@
       }
     }
   }
+  // Background color
+@mixin bg-color($parent, $background) {
+    #{$parent} {
+        background-color: $background;
+    }
+}
+// Background Classes
+@each $background, $value in $backgrounds {
+    @include bg-color(".bg-color-#{$background}", $value);
+}
+  // Gradient text
+@mixin text-gradient($parent, $gradient) {
+    #{$parent} {
+      background-image: $gradient;
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  // Gradient Classes 
+@each $gradient, $value in $gradients {
+    @include text-gradient(".text-gradient-#{$gradient}", $value);
+  }
+
+  

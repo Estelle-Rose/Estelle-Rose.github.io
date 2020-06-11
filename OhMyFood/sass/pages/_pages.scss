@@ -57,13 +57,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.image-gauche, .image-droite {
-    width: 28%;  
-    @include respond-to(small) {
-        width: 33%;       
+    img {
+        width: 30%;
     }
 }
+
 
 /* page note */
 
@@ -94,11 +92,7 @@
     }
     
 }
-.menu-page--note {
-    .image-droite {
-        margin-top: 10px;
-    }
-}
+
 
 /* Couleurs et dégradés */ 
 .image-delice {  
@@ -108,9 +102,7 @@
 .image-delice-2 {    
         filter: brightness(265%)  
 }
-.entrées img {
-    width: 28%;
-}
+
 
 /*MENTIONS LÉGALES */ 
 

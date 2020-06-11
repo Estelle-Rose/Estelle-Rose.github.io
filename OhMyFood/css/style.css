@@ -1,4 +1,48 @@
 @charset "UTF-8";
+.bg-color-note {
+  background-color: #fcdfdb;
+}
+
+.bg-color-chic {
+  background-color: #fff5fe;
+}
+
+.bg-color-delice {
+  background-color: #f9f9f9;
+}
+
+.bg-color-palette {
+  background-color: #fdfffd;
+}
+
+.text-gradient-note {
+  background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-gradient-chic {
+  background-image: linear-gradient(to bottom right, #c77412 30%, #6e4ccc);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-gradient-delice {
+  background-image: linear-gradient(to bottom right, #055194, #0887f6 50%, #00d4ff 95%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-gradient-palette {
+  background-image: linear-gradient(to bottom right, #3c6f2a 20%, #72bf56 70%, #61f72a 95%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 /* kaushan-script-regular - latin */
 @font-face {
   font-family: "Kaushan Script";
@@ -109,6 +153,7 @@ p {
 h4 {
   font-size: 1em;
   opacity: 0.7;
+  padding-top: 15px;
   padding-bottom: 3px;
 }
 h4::after {
@@ -117,7 +162,8 @@ h4::after {
   width: 0%;
   padding-top: 3px;
   border-bottom: 2px solid currentColor;
-  transition: 0.5s ease;
+  opacity: 0.7;
+  transition: width 1s ease;
 }
 h4:hover::after {
   width: 100%;
@@ -126,7 +172,6 @@ h4:hover::after {
 /* Page Note */
 .menu--note {
   color: #3c1218;
-  background: #fcdfdb;
 }
 .menu--note h3 {
   display: flex;
@@ -155,19 +200,12 @@ h4:hover::after {
 .menu--note h4 {
   font-size: 1.2em;
   opacity: 1;
+  margin: 0 1rem;
 }
 
 /*page chic*/
-.menu--chic {
-  background: #fff5fe;
-}
 .menu--chic h3 {
   font-family: "croissant_one", Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to bottom right, #c77412 30%, #6e4ccc);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-color: #c77412;
   padding-top: 30px;
   filter: brightness(130%);
   font-size: 35px;
@@ -195,15 +233,8 @@ h4:hover::after {
 }
 
 /*page delice*/
-.menu--delice {
-  background: #f9f9f9;
-}
 .menu--delice h3 {
   font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to bottom right, #055194, #0887f6 50%, #00d4ff 95%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   padding-top: 30px;
   padding-left: 10px;
 }
@@ -212,15 +243,8 @@ h4:hover::after {
 }
 
 /*page palette*/
-.menu--palette {
-  background: #fdfffd;
-}
 .menu--palette h3 {
   font-family: "kaushan script", Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to bottom right, #3c6f2a 20%, #72bf56 70%, #61f72a 95%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   padding-top: 30px;
   filter: brightness(110%);
 }
@@ -462,14 +486,8 @@ footer a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.image-gauche, .image-droite {
-  width: 28%;
-}
-@media (min-width: 767px) {
-  .image-gauche, .image-droite {
-    width: 33%;
-  }
+.separateurs img {
+  width: 30%;
 }
 
 /* page note */
@@ -498,10 +516,6 @@ footer a:hover {
   font-size: 2.5em;
 }
 
-.menu-page--note .image-droite {
-  margin-top: 10px;
-}
-
 /* Couleurs et dégradés */
 .image-delice {
   filter: brightness(165%);
@@ -509,10 +523,6 @@ footer a:hover {
 
 .image-delice-2 {
   filter: brightness(265%);
-}
-
-.entrées img {
-  width: 28%;
 }
 
 /*MENTIONS LÉGALES */
