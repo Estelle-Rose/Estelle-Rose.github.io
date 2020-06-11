@@ -58,7 +58,9 @@
     justify-content: center;
     align-items: center;
     img {
-        width: 30%;
+        max-width: 28%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
