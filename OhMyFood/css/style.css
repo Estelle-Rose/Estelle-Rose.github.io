@@ -333,25 +333,21 @@ footer a:hover {
     padding-bottom: 1.5rem;
   }
 }
+.accueil-menu {
+  margin: 2rem 2rem 1rem 2rem;
+}
 .accueil a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem 1rem 1rem 1rem;
-  width: 450px;
+  width: 400px;
   height: 650px;
 }
 @media (min-width: 1200px) {
   .accueil a {
     width: 33vh;
     height: 45vh;
-    margin-right: 20px;
-  }
-}
-@media (min-width: 750px) {
-  .accueil a {
-    margin-left: 2rem;
   }
 }
 @media (min-width: 1200px) {
