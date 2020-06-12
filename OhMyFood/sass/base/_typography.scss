@@ -10,33 +10,43 @@ h2 {
     color: #353535;
 }
 h3 {
-    font-size: 50px;
+    font-size: 3em;
+    padding-top: 30px;  
+     
 }
 a {
     text-decoration: none;
 }
+
 li {
     font-size: 0.9em;
-    opacity: 0.8;    
+    opacity: 0.8; 
+    list-style-type: none;   
 }
 .prix {
-    font-size: 1em;;
+    font-size: 1em;
     opacity: 1;
 }
 p {
     font-size: 3em;
-    margin-top: -25px;;
+    margin-top: -25px;
 }
 .menu-page {
     @media (min-width: 767px) {
         padding: 1rem;
     }
+    h3 {
+        @include respond-to(medium) {
+            font-size: 2.5em;
+        } 
+    }
 }
 h4 {
     font-size: 1em;
     opacity: 0.7;
-   padding-top: 15px;
-    padding-bottom: 3px;
+    margin: 0 0.5rem;
+    padding: 2rem 0;
+    
     
    &::after {
     content: "";
@@ -82,20 +92,20 @@ h4 {
         -webkit-text-fill-color: transparent;
         font-size: 4em;
     }
-    h4 {
+    h4 {    
         font-size: 1.2em;
-        opacity: 1;
-        margin: 0 1rem;
+        opacity: 1;        
+        @include respond-to(small) {
+            padding-top: 50px;
+        }
     }
    
 }
 /*page chic*/
 
-  .menu--chic {
-    
+  .menu--chic {    
     h3 {
-        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;                
-        padding-top: 30px;       
+        font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;          
         filter: brightness(130%);
         font-size: 35px;
     }    
@@ -103,10 +113,9 @@ h4 {
         font-family: 'montserrat bold',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-chic;      
     }
-    h4 {
-        position: relative;
+    h4 {        
         font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;        
-        margin: 0 1rem;        
+             
     }
     li {
         font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;       
@@ -123,32 +132,21 @@ h4 {
   }
   
   /*page delice*/
-  .menu--delice {
-    
+  .menu--delice {    
     h3 {
         font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;         
-        padding-top: 30px;
         padding-left: 10px;
     }    
     p {       
         color: $color-delice;           
-    }
-    
+    }    
   }
 /*page palette*/
-  .menu--palette {
-     
-      
+  .menu--palette {         
     h3 {
         font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;          
-        padding-top: 30px;
-        filter: brightness(110%);  
-            
-    }    
-    h4 {               
-        padding-left: 20px;
-        padding-right: 20px;
-    }    
+        filter: brightness(110%);              
+    }          
     p {
         color: $color-palette;       
     }
