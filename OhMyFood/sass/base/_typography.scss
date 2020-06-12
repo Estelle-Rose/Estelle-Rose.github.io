@@ -10,9 +10,7 @@ h2 {
     color: #353535;
 }
 h3 {
-    font-size: 3em;
-    padding-top: 30px;  
-     
+    font-size: 3em;         
 }
 a {
     text-decoration: none;
@@ -29,24 +27,22 @@ li {
 }
 p {
     font-size: 3em;
-    margin-top: -25px;
+    margin-top: -2rem;
 }
 .menu-page {
     @media (min-width: 767px) {
         padding: 1rem;
     }
-    h3 {
-        @include respond-to(medium) {
-            font-size: 2.5em;
-        } 
-    }
 }
+
+
+
+// Titres des différents menus avec animation de gauche à droite
 h4 {
     font-size: 1em;
     opacity: 0.7;
     margin: 0 0.5rem;
-    padding: 2rem 0;
-    
+    padding: 2rem 0;  
     
    &::after {
     content: "";
@@ -99,7 +95,6 @@ h4 {
             padding-top: 50px;
         }
     }
-   
 }
 /*page chic*/
 
@@ -113,13 +108,9 @@ h4 {
         font-family: 'montserrat bold',Tahoma, Geneva, Verdana, sans-serif;
         color: $color-chic;      
     }
-    h4 {        
-        font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;        
-             
-    }
-    li {
-        font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;       
-    }
+    h4, li {        
+        font-family: 'montserrat',Tahoma, Geneva, Verdana, sans-serif;                
+    }    
     .entrées {
         color: $color-chic;
     }
@@ -129,10 +120,10 @@ h4 {
     .desserts {
         color: #6e4ccc;
     }
-  }
+}
   
   /*page delice*/
-  .menu--delice {    
+.menu--delice {    
     h3 {
         font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;         
         padding-left: 10px;
@@ -142,12 +133,13 @@ h4 {
     }    
   }
 /*page palette*/
-  .menu--palette {         
+.menu--palette {         
     h3 {
         font-family: 'kaushan script',Tahoma, Geneva, Verdana, sans-serif;          
-        filter: brightness(110%);              
+        filter: brightness(110%);    
+        padding-right: 10px;          
     }          
     p {
         color: $color-palette;       
     }
-  }
+}
