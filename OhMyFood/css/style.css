@@ -202,7 +202,7 @@ h4:hover::after {
   font-size: 1.2em;
   opacity: 1;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .menu--note h4 {
     padding-top: 50px;
   }
@@ -377,7 +377,7 @@ footer a:hover {
   width: 43vh;
   height: 63vh;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .accueil a {
     width: 36vh;
     height: 56vh;
@@ -397,7 +397,7 @@ footer a:hover {
   align-items: center;
   padding: 1rem;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .top, .bottom {
     flex-direction: row;
     margin-bottom: 0.5rem;
@@ -448,7 +448,7 @@ footer a:hover {
   flex-direction: column;
   padding: 3rem 1rem 1rem 1rem;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .menu-page {
     width: 700px;
   }
@@ -461,7 +461,7 @@ footer a:hover {
   text-align: center;
   margin-left: -25px;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .menu-page ul {
     display: flex;
     flex-direction: row;
@@ -477,7 +477,7 @@ footer a:hover {
 .menu-page .prix {
   margin-top: 10px;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .menu-page .prix {
     margin-top: 0;
   }
@@ -560,7 +560,7 @@ footer a:hover {
   font-size: 0.9em;
   line-height: 1.6rem;
 }
-@media (min-width: 601px) {
+@media (min-width: 599px) {
   .mentions {
     width: 700px;
   }
