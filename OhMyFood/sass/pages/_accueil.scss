@@ -28,6 +28,7 @@
     padding: 1rem;
     @include respond-to(medium){
         flex-direction: row;
+        margin-bottom: 0.5rem;
     }
 }
 .accueil-menu {
