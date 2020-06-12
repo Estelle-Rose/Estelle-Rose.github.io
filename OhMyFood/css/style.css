@@ -389,7 +389,7 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 @media (min-width: 992px) {
   .top, .bottom {
@@ -404,7 +404,7 @@ footer a:hover {
 }
 @media (min-width: 992px) {
   .accueil-menu {
-    padding: 0 2rem;
+    padding: 0 rem;
   }
 }
 
