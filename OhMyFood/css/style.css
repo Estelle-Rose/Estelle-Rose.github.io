@@ -391,14 +391,15 @@ footer a:hover {
   flex-direction: column;
   padding: 1rem;
   width: 90%;
-  height: 700px;
+  height: 600px;
 }
 @media (min-width: 767px) {
   .accueil-menu {
     width: 50%;
+    height: 700px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 840px) {
   .accueil-menu {
     width: 50vh;
   }
@@ -410,7 +411,7 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   transform: scale(0.9);
-  opacity: 0.85;
+  opacity: 0.75;
   transition: transform 800ms opacity 600ms;
 }
 .menu:hover {
@@ -524,7 +525,7 @@ footer a:hover {
   filter: brightness(265%);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 840px) {
   a .menu--palette {
     padding: 0 2rem;
   }
