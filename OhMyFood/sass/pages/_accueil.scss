@@ -32,11 +32,11 @@
     flex-direction: column;
     padding: 1rem;
     width: 90%;
-    height: 600px;   
+    height: 500px;   
     
     @include respond-to(medium) {
         width: 50%; 
-        height: 700px;       
+        height: 600px;       
     }
     @include respond-to(large) {
         width: 50vh;
@@ -50,11 +50,11 @@
      justify-content: center;
      align-items: center;  
      transform: scale(0.9);
-     opacity: 0.75;
+     opacity: 1;
      transition: transform 800ms opacity 600ms;
      &:hover {
          transform: scale(1);
-         opacity: 1;
+         opacity: 0.7;
      }     
  }
  

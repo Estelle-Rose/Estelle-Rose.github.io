@@ -116,7 +116,7 @@ h4, li, p {
   font-family: "segoe print", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
+h1 {
   font-size: 2em;
   color: #353535;
 }
@@ -147,7 +147,7 @@ p {
 
 h4 {
   font-size: 1em;
-  opacity: 0.7;
+  opacity: 1;
   margin: 0 0.5rem;
   padding: 2rem 0;
 }
@@ -302,16 +302,21 @@ h4:hover::after {
   justify-content: center;
   align-items: center;
 }
-.banner h1 a {
-  font-family: "montserrat";
-  font-weight: 700;
-  color: #fdcb46;
-  font-size: 1.8em;
+.banner h1, .banner .banner-title {
+  margin: 0;
+}
+.banner h1 a, .banner .banner-title a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h1 a img, .banner .banner-title a img {
+  width: 300px;
   margin: auto;
 }
-@media (min-width: 767px) {
-  .banner h1 a {
-    font-size: 2.5em;
+@media (min-width: 599px) {
+  .banner h1 a img, .banner .banner-title a img {
+    width: 400px;
   }
 }
 
@@ -391,12 +396,12 @@ footer a:hover {
   flex-direction: column;
   padding: 1rem;
   width: 90%;
-  height: 600px;
+  height: 500px;
 }
 @media (min-width: 767px) {
   .accueil-menu {
     width: 50%;
-    height: 700px;
+    height: 600px;
   }
 }
 @media (min-width: 840px) {
@@ -411,12 +416,12 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   transform: scale(0.9);
-  opacity: 0.75;
+  opacity: 1;
   transition: transform 800ms opacity 600ms;
 }
 .menu:hover {
   transform: scale(1);
-  opacity: 1;
+  opacity: 0.7;
 }
 
 /*PAGES*/
@@ -513,6 +518,7 @@ footer a:hover {
   padding-top: 20px;
 }
 .footer-note h3 {
+  padding-top: 15px;
   font-size: 2.5em;
 }
 
@@ -540,6 +546,7 @@ footer a:hover {
   flex-direction: column;
   padding: 3rem 1rem 2rem 1rem;
   margin-top: 2rem;
+  text-align: left;
 }
 .mentions h3 {
   font-size: 1.5em;
@@ -548,7 +555,8 @@ footer a:hover {
 .mentions p {
   font-family: "montserrat", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9em;
-  line-height: 1.6rem;
+  text-align: left;
+  margin: 10px 0;
 }
 @media (min-width: 599px) {
   .mentions {

@@ -6,15 +6,20 @@
     justify-content: center;
     align-items: center;  
     
-           
-    h1 a {   
-        font-family: 'montserrat';
-        font-weight: 700;
-        color: $color-secondary;              
-        font-size: 1.8em;        
-        margin: auto;
-        @media (min-width: 767px) {
-            font-size: 2.5em;
-        }            
+    h1 , .banner-title {
+        margin: 0;       
+    
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {           
+                width: 300px;
+                margin: auto;
+                @include respond-to(small) {
+                    width: 400px;
+                }
+            }
+        }
     }
 }
