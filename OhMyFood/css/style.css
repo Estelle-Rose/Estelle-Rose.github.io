@@ -247,8 +247,7 @@ h4:hover::after {
   margin-top: 30px;
   margin-bottom: 10vh;
 }
-
-.btn {
+.container .btn {
   margin: auto;
   display: flex;
   justify-content: center;
@@ -282,13 +281,12 @@ h4:hover::after {
 }
 
 .dots span:nth-child(3) {
-  animation-delay: 0.8s;
+  animation-delay: 0.9s;
 }
 
 @keyframes dots {
   50% {
     opacity: 0;
-    transform: scale(0.7);
   }
 }
 /*HEADER*/
@@ -337,7 +335,7 @@ footer a {
   font-size: 1.2em;
   padding: 1rem;
 }
-@media screen and (min-width: 767px) {
+@media (min-width: 767px) {
   footer a {
     font-size: 1.6em;
   }
@@ -459,8 +457,12 @@ footer a:hover {
   }
 }
 .menu-page li {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 1rem;
+}
+@media (min-width: 599px) {
+  .menu-page li {
+    padding: 0 2rem;
+  }
 }
 .menu-page .prix {
   margin-top: 10px;
@@ -473,7 +475,10 @@ footer a:hover {
 .menu-page .desserts ul {
   display: flex;
   flex-direction: column;
-  line-height: 2em;
+  line-height: 1.5em;
+}
+.menu-page .desserts ul li {
+  padding-bottom: 1rem;
 }
 
 .separateurs {

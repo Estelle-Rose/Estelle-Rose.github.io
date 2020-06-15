@@ -32,8 +32,10 @@
         }        
     }
     li {
-        padding-left: 40px;
-        padding-right: 40px;        
+        padding: 0 1rem;
+        @include respond-to(small) {
+            padding: 0 2rem;
+        }        
     }  
     .prix {
         margin-top: 10px;
@@ -45,7 +47,11 @@
     .desserts ul{
         display: flex;
         flex-direction: column;
-        line-height: 2em;       
+        line-height: 1.5em;   
+        li {
+            padding-bottom: 1rem;
+        }
+         
     }
 }
 .separateurs {
