@@ -19,28 +19,28 @@
   background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-chic {
   background-image: linear-gradient(to bottom right, #c77412 30%, #6e4ccc);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-delice {
   background-image: linear-gradient(to bottom right, #055194, #0887f6 50%, #00d4ff 95%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-palette {
   background-image: linear-gradient(to bottom right, #3c6f2a 20%, #72bf56 70%, #61f72a 95%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* kaushan-script-regular - latin */
@@ -100,7 +100,7 @@
   font-weight: 400;
   src: url("../fonts/segoepr.ttf") format("truetype"), url("../fonts/segoepr.woff") format("woff");
 }
-/* Croissant-one egular */
+/* Croissant-one regular */
 @font-face {
   font-family: "croissant_one";
   src: url("../fonts/croissantone-regular-webfont.woff2") format("woff2"), url("../fonts/CroissantOne-Regular.ttf") format("truetype"), url("../fonts/croissantone-regular-webfont.woff") format("woff");
