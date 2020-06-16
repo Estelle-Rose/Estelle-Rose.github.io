@@ -12,8 +12,7 @@
     align-items: center;
     width: 330px;
     height:80px;
-    border-radius: 1rem;
-    background-color: $color-primary;            
+    border-radius: 1rem;             
     color: #fdcb46;        
     font-size: 1.9em;
     
@@ -38,7 +37,7 @@
     animation-delay: 0.3s;
 }
 .dots span:nth-child(3) {
-    animation-delay: 0.9s;
+    animation-delay: 1s;
 }
 @keyframes dots {
     50% {

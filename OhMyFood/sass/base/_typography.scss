@@ -7,6 +7,7 @@ h4, li, p {
 }
 h1 {    
     font-size: 2em;
+    font-weight: bold;
     color: #353535;
 }
 h3 {
@@ -27,7 +28,7 @@ li {
 }
 p {
     font-size: 3em;
-    margin-top: -2rem;
+    
 }
 
 
@@ -73,9 +74,9 @@ h4 {
     .titre {
         margin-top: 0;
     }
-    .fas {
-        
+    .fas {        
         font-size: 4em;
+        padding: 0 1rem;
     }
     h4 {    
         font-size: 1.2em;
@@ -87,7 +88,7 @@ h4 {
 }
 /*page chic*/
 
-  .menu--chic {    
+.menu--chic {    
     h3 {
         font-family: 'croissant_one',Tahoma, Geneva, Verdana, sans-serif;          
         filter: brightness(130%);
@@ -115,7 +116,9 @@ h4 {
 .menu--delice {    
     h3 {
         font-family: 'dancing script',Tahoma, Geneva, Verdana, sans-serif;         
-        padding-left: 10px;
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-bottom: 6px;
     }    
     p {       
         color: $color-delice;           

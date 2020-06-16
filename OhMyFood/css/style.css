@@ -53,6 +53,93 @@
   -webkit-text-fill-color: transparent;
 }
 
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* kaushan-script-regular - latin */
 @font-face {
   font-family: "Kaushan Script";
@@ -128,6 +215,7 @@ h4, li, p {
 
 h1 {
   font-size: 2em;
+  font-weight: bold;
   color: #353535;
 }
 
@@ -152,7 +240,6 @@ li {
 
 p {
   font-size: 3em;
-  margin-top: -2rem;
 }
 
 h4 {
@@ -193,6 +280,7 @@ h4:hover::after {
 }
 .menu--note .fas {
   font-size: 4em;
+  padding: 0 1rem;
 }
 .menu--note h4 {
   font-size: 1.2em;
@@ -230,7 +318,9 @@ h4:hover::after {
 /*page delice*/
 .menu--delice h3 {
   font-family: "dancing script", Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 6px;
 }
 .menu--delice p {
   color: #0887f6;
@@ -260,7 +350,6 @@ h4:hover::after {
   width: 330px;
   height: 80px;
   border-radius: 1rem;
-  background-color: #579c87;
   color: #fdcb46;
   font-size: 1.9em;
 }
@@ -286,7 +375,7 @@ h4:hover::after {
 }
 
 .dots span:nth-child(3) {
-  animation-delay: 0.9s;
+  animation-delay: 1s;
 }
 
 @keyframes dots {
@@ -344,17 +433,17 @@ footer a {
   }
 }
 footer a:hover {
-  animation: shake 1s;
+  animation: shake 0.2s;
   animation-iteration-count: infinite;
 }
 @keyframes shake {
   0%, 100% {
     transform: translate(0, 0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  33% {
     transform: translateX(5px);
   }
-  20%, 40%, 60%, 80% {
+  66% {
     transform: translateX(-5px);
   }
 }
@@ -410,6 +499,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: space-between;
   align-items: center;
   transform: scale(0.9);
   opacity: 1;
@@ -430,7 +520,7 @@ footer a:hover {
 .menu-page {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   max-width: 75%;
-  margin: 0 auto 200px auto;
+  margin: 1rem auto 8rem auto;
   display: flex;
   flex-direction: column;
   padding: 3rem 1rem 1rem 1rem;
@@ -440,13 +530,16 @@ footer a:hover {
     width: 700px;
   }
 }
+.menu-page__heading {
+  padding-bottom: 1rem;
+}
 .menu-page ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: -25px;
+  padding-bottom: 5px;
 }
 @media (min-width: 599px) {
   .menu-page ul {
@@ -458,7 +551,7 @@ footer a:hover {
   }
 }
 .menu-page li {
-  padding: 0 1rem;
+  padding: 1rem;
 }
 @media (min-width: 599px) {
   .menu-page li {
@@ -473,10 +566,13 @@ footer a:hover {
     margin-top: 0;
   }
 }
+.menu-page .plats {
+  padding-bottom: 1rem;
+}
 .menu-page .desserts ul {
   display: flex;
   flex-direction: column;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 .menu-page .desserts ul li {
   padding-bottom: 1rem;
@@ -488,7 +584,7 @@ footer a:hover {
   align-items: center;
 }
 .separateurs img {
-  max-width: 26%;
+  max-width: 32%;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -498,10 +594,10 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 1rem;
 }
 .note .fas, .note .fa {
-  margin-bottom: -40px;
+  padding-left: 1rem;
   font-size: 4em;
 }
 
@@ -513,12 +609,12 @@ footer a:hover {
 }
 .footer-note .fas {
   font-size: 2em;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-top: 20px;
 }
 .footer-note h3 {
   padding-top: 15px;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 /* PAGE DÉLICE */
@@ -543,7 +639,7 @@ footer a:hover {
   margin: 0 auto 200px auto;
   display: flex;
   flex-direction: column;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 2rem 2rem;
   margin-top: 2rem;
   text-align: left;
 }
