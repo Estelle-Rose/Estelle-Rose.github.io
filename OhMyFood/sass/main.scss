@@ -1,10 +1,14 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+
 @import "./base/base";
 @import "./base/fonts.scss";
 @import "./base/typography.scss";
-@import "./components/button";
+
 @import "./layouts/header.scss";
 @import "./layouts/footer.scss";
+
+@import "./components/button";
+
 @import "./pages/accueil.scss";
 @import "./pages/pages.scss";

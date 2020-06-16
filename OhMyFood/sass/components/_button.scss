@@ -5,33 +5,33 @@
     margin-top: 30px;
     margin-bottom: 10vh;    
 
-.btn {
-    margin: auto;    
-    display: flex;    
-    justify-content: center;        
-    align-items: center;
-    width: 330px;
-    height:80px;
-    border-radius: 1rem;             
-    color: #fdcb46;        
-    font-size: 1.9em;
-    
-}
+    .btn {
+        margin: auto;    
+        display: flex;    
+        justify-content: center;        
+        align-items: center;
+        width: 330px;
+        height:80px;
+        border-radius: 1rem;             
+        color: #fdcb46;        
+        font-size: 1.9em;
+        
+    }
 }
 .dots {
     margin-left: 15px;
     span {
-    width: 8px;
-    height: 8px;
-    margin: 0 2px;
-    border-radius: 50%;
-    background-color: #fdcb46;
-    display: inline-block; 
-    animation-name: dots;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
+        width: 8px;
+        height: 8px;
+        margin: 0 2px;
+        border-radius: 50%;
+        background-color: #fdcb46;
+        display: inline-block; 
+        animation-name: dots;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
 }
 .dots span:nth-child(2) {
     animation-delay: 0.3s;
