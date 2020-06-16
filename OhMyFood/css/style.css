@@ -15,6 +15,21 @@
   background-color: #fdfffd;
 }
 
+.bg-color-primary {
+  background-color: #579c87;
+}
+
+.bg-color-white {
+  background-color: #fff;
+}
+
+.text-gradient-musique {
+  background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-gradient-note {
   background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
   color: transparent;
@@ -182,11 +197,6 @@ h4:hover::after {
   margin-top: 0;
 }
 .menu--note .fas {
-  color: #f15861;
-  background: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 4em;
 }
 .menu--note h4 {
@@ -277,7 +287,7 @@ h4:hover::after {
 }
 
 .dots span:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 .dots span:nth-child(3) {
@@ -291,7 +301,6 @@ h4:hover::after {
 }
 /*HEADER*/
 .banner {
-  background-color: #579c87;
   height: 170px;
   display: flex;
   justify-content: center;
@@ -323,7 +332,6 @@ footer {
   right: 0px;
   width: 100%;
   height: 10vh;
-  background-color: #579c87;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -356,20 +364,10 @@ footer a:hover {
   }
 }
 
-/*MAIN*/
 .accueil {
   display: flex;
   flex-direction: column;
   padding: 3rem 0;
-}
-.accueil a {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .top, .bottom {
@@ -404,8 +402,16 @@ footer a:hover {
     width: 50vh;
   }
 }
-
-.menu {
+.accueil-menu a {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.accueil-menu .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,7 +420,7 @@ footer a:hover {
   opacity: 1;
   transition: transform 800ms, opacity 600ms;
 }
-.menu:hover {
+.accueil-menu .menu:hover {
   transform: scale(1);
   opacity: 0.7;
 }
