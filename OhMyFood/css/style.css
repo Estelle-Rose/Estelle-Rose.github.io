@@ -25,35 +25,30 @@
 
 .text-gradient-musique {
   background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-note {
   background-image: linear-gradient(to bottom right, #f15861 40%, #f78f6a 80%);
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-chic {
   background-image: linear-gradient(to bottom right, #c77412 30%, #6e4ccc);
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-delice {
   background-image: linear-gradient(to bottom right, #055194, #0887f6 50%, #00d4ff 95%);
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-palette {
   background-image: linear-gradient(to bottom right, #3c6f2a 20%, #72bf56 70%, #61f72a 95%);
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -389,12 +384,12 @@ footer a:hover {
   flex-direction: column;
   padding: 1rem;
   width: 90%;
-  height: 500px;
+  height: 650px;
 }
 @media (min-width: 767px) {
   .accueil-menu {
     width: 50%;
-    height: 600px;
+    height: 650px;
   }
 }
 @media (min-width: 840px) {

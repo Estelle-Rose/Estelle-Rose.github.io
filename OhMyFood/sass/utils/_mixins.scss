@@ -36,8 +36,7 @@
   // Gradient text
 @mixin text-gradient($parent, $gradient) {
     #{$parent} {
-      background-image: $gradient;
-      color:transparent;
+      background-image: $gradient;      
       -webkit-background-clip: text;      
       -webkit-text-fill-color: transparent;
     }
