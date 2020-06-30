@@ -304,7 +304,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    max-height: 80px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -823,13 +823,15 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.png");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
-
+#logo {
+    width: 100px;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
