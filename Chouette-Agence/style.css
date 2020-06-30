@@ -273,8 +273,10 @@ a:hover {
 }
 
 .row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -703,10 +705,7 @@ p {
     max-width: 400px;
     padding-top: 20px;
     padding-bottom: 30px;
-    margin: auto auto auto auto;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
+    margin: auto;    
 }
 
 
@@ -1032,9 +1031,7 @@ h4 {
         width: 180px;
         height: 320px;
     }
-    .social {
-        padding-left: 20px;
-    }
+    
 }
 
 @media (max-width: 400px) {
