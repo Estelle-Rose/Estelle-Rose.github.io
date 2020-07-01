@@ -219,7 +219,7 @@ h1 {
   color: #353535;
 }
 
-h3, p {
+h3 {
   font-size: 3em;
 }
 
@@ -236,6 +236,10 @@ li {
 .prix {
   font-size: 1em;
   opacity: 1;
+}
+
+p {
+  font-size: 3em;
 }
 
 h4 {
@@ -332,6 +336,53 @@ h4:hover::after {
   color: #72bf56;
 }
 
+/*PROCHAINEMENT*/
+.container {
+  height: 20vh;
+  margin-top: 30px;
+  margin-bottom: 10vh;
+}
+.container .btn {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 80px;
+  border-radius: 1rem;
+  color: #fdcb46;
+  font-size: 1.9em;
+}
+
+.dots {
+  margin-left: 15px;
+}
+.dots span {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #fdcb46;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+  }
+}
 /*HEADER*/
 .banner {
   height: 170px;
@@ -397,53 +448,6 @@ footer a:hover {
   }
 }
 
-/*PROCHAINEMENT*/
-.container {
-  height: 20vh;
-  margin-top: 30px;
-  margin-bottom: 10vh;
-}
-.container .btn {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 330px;
-  height: 80px;
-  border-radius: 1rem;
-  color: #fdcb46;
-  font-size: 1.9em;
-}
-
-.dots {
-  margin-left: 15px;
-}
-.dots span {
-  width: 8px;
-  height: 8px;
-  margin: 0 2px;
-  border-radius: 50%;
-  background-color: #fdcb46;
-  display: inline-block;
-  animation-name: dots;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.dots span:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.dots span:nth-child(3) {
-  animation-delay: 1s;
-}
-
-@keyframes dots {
-  50% {
-    opacity: 0;
-  }
-}
 .accueil {
   display: flex;
   flex-direction: column;
@@ -495,6 +499,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: space-between;
   align-items: center;
   transform: scale(0.9);
   opacity: 1;
@@ -505,6 +510,7 @@ footer a:hover {
   opacity: 0.7;
 }
 
+/*PAGES*/
 .bloc-menu {
   display: flex;
   flex-direction: column;

@@ -42,7 +42,9 @@
     .menu {    
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
+        align-content: space-between;
+        
         align-items: center;  
         transform: scale(0.9);
         opacity: 1;

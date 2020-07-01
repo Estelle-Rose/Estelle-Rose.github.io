@@ -10,7 +10,7 @@ h1 {
     font-weight: bold;
     color: #353535;
 }
-h3, p {
+h3 {
     font-size: 3em;         
 }
 a {
@@ -26,6 +26,13 @@ li {
     font-size: 1em;
     opacity: 1;
 }
+p {
+    font-size: 3em;
+    
+}
+
+
+
 
 // Titres des différents menus avec animation de gauche à droite
 h4 {
@@ -35,16 +42,16 @@ h4 {
     padding: 2rem 0;  
     
    &::after {
-        content: "";
-        display: block;
-        width: 0%;
-        padding-top: 3px;
-        border-bottom: 2px solid currentColor;
-        opacity: 0.7;
-        transition: width 1s ease;
-        }
+    content: "";
+    display: block;
+    width: 0%;
+    padding-top: 3px;
+    border-bottom: 2px solid currentColor;
+    opacity: 0.7;
+    transition: width 1s ease;
+    }
     &:hover::after {
-        width: 100%;
+    width: 100%;
     }
 }      
     
