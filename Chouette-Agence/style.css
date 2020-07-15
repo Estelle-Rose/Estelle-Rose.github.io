@@ -841,6 +841,9 @@ h4 {
 #logo {
     width: 100px;
 }
+
+/* Media queries */
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1058,4 +1061,4 @@ h4 {
         text-align: center;
     }
 }
-/*Footer*/
+
